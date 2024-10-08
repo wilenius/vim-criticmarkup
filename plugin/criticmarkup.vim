@@ -1,7 +1,7 @@
 augroup criticmarkup
     autocmd!
-    autocmd Filetype pandoc,markdown,mkd,txt call criticmarkup#Init()
-    autocmd Syntax pandoc,markdown,mkd,txt call criticmarkup#InjectHighlighting()
+    autocmd Filetype pandoc,markdown,mkd,md,txt call criticmarkup#Init()
+    autocmd Syntax pandoc,markdown,mkd,md,txt call criticmarkup#InjectHighlighting()
     " The unorthodox way this plugin injects new syntax rules is broken in
     " Neovim which takes a different approach to initializing the GUI (which
     " is an optional component rather than an assumed part of the system). As
